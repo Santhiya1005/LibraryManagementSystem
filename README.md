@@ -1,11 +1,11 @@
-# 📚 Library Management System (Java + PostgreSQL)
+# Library Management System (Java + PostgreSQL)
 
 A console-based Library Management System built using **Java (JDBC)** and **PostgreSQL**.  
 This project allows management of books, students, and book issuing/returning functionality.
 
 ---
 
-## 🚀 Features
+## Features
 
 - ✅ Add Book  
 - ✅ View Books  
@@ -19,7 +19,7 @@ This project allows management of books, students, and book issuing/returning fu
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - Java (JDK 23)
 - JDBC
@@ -29,9 +29,9 @@ This project allows management of books, students, and book issuing/returning fu
 
 ---
 
-## 🗂 Database Structure
+## Database Structure
 
-### 📚 Books Table
+### Books Table
 | Column      | Type      |
 |------------|-----------|
 | book_id    | SERIAL (PK) |
@@ -41,7 +41,7 @@ This project allows management of books, students, and book issuing/returning fu
 
 ---
 
-### 👩‍🎓 Students Table
+### Students Table
 | Column      | Type      |
 |------------|-----------|
 | student_id | SERIAL (PK) |
@@ -51,7 +51,7 @@ This project allows management of books, students, and book issuing/returning fu
 
 ---
 
-### 📖 Issued Books Table
+### Issued Books Table
 | Column      | Type      |
 |------------|-----------|
 | issue_id   | SERIAL (PK) |
@@ -62,7 +62,7 @@ This project allows management of books, students, and book issuing/returning fu
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 ### Issue Book Logic
 - Checks if the book is available
@@ -75,7 +75,7 @@ This project allows management of books, students, and book issuing/returning fu
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 1. Clone the repository:
    ```bash
@@ -97,7 +97,7 @@ This project allows management of books, students, and book issuing/returning fu
 
 ---
 
-## 🎯 Learning Outcomes
+## Learning Outcomes
 
 - JDBC database connectivity
 - CRUD operations
@@ -108,7 +108,7 @@ This project allows management of books, students, and book issuing/returning fu
 
 ---
 
-## 📌 Future Improvements
+## Future Improvements
 
 - Search functionality
 - Fine calculation for late returns
@@ -118,11 +118,10 @@ This project allows management of books, students, and book issuing/returning fu
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 Santhiya  
 GitHub: https://github.com/Santhiya1005
 
 ---
 
-🔥 This project demonstrates strong understanding of backend development using Java and PostgreSQL.
