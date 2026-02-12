@@ -5,7 +5,7 @@ public class LibraryService {
 
     private Scanner sc = new Scanner(System.in);
 
-    // ✅ Add Book (NO ID input)
+    // Add Book (NO ID input)
     public void addBook() {
 
         System.out.println("Enter book name: ");
@@ -26,17 +26,17 @@ public class LibraryService {
 
             pst.executeUpdate();
 
-            System.out.println("Book added successfully 🔥");
+            System.out.println("Book added successfully ");
 
             conn.close();
 
         } catch (SQLException e) {
-            System.out.println("Error while adding book 😢");
+            System.out.println("Error while adding book ");
             e.printStackTrace();
         }
     }
 
-    // ✅ View Books
+    // View Books
     public void viewBooks() {
 
         try {
@@ -63,12 +63,12 @@ public class LibraryService {
             conn.close();
 
         } catch (SQLException e) {
-            System.out.println("Error while fetching books 😢");
+            System.out.println("Error while fetching books ");
             e.printStackTrace();
         }
     }
 
-    // ✅ Update Book
+    // Update Book
     public void updateBooks() {
 
         System.out.println("Enter book ID to update: ");
@@ -94,20 +94,20 @@ public class LibraryService {
             int rows = pst.executeUpdate();
 
             if (rows > 0) {
-                System.out.println("Book updated successfully 🔥");
+                System.out.println("Book updated successfully ");
             } else {
-                System.out.println("Book not found 😢");
+                System.out.println("Book not found ");
             }
 
             conn.close();
 
         } catch (SQLException e) {
-            System.out.println("Error while updating book 😢");
+            System.out.println("Error while updating book ");
             e.printStackTrace();
         }
     }
 
-    // ✅ Delete Book
+    // Delete Book
     public void deleteBooks() {
 
         System.out.println("Enter book ID to delete: ");
@@ -125,15 +125,15 @@ public class LibraryService {
             int rows = pst.executeUpdate();
 
             if (rows > 0) {
-                System.out.println("Book deleted successfully 🔥");
+                System.out.println("Book deleted successfully ");
             } else {
-                System.out.println("Book not found 😢");
+                System.out.println("Book not found ");
             }
 
             conn.close();
 
         } catch (SQLException e) {
-            System.out.println("Error while deleting book 😢");
+            System.out.println("Error while deleting book ");
             e.printStackTrace();
         }
     }
@@ -157,7 +157,7 @@ public class LibraryService {
             ps.setString(3, phone);
 
             ps.executeUpdate();
-            System.out.println("Student added successfully 🔥");
+            System.out.println("Student added successfully ");
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -217,14 +217,14 @@ public class LibraryService {
                     updatePs.setInt(1, bookId);
                     updatePs.executeUpdate();
 
-                    System.out.println("Book issued successfully 🔥");
+                    System.out.println("Book issued successfully ");
 
                 } else {
-                    System.out.println("Book already issued ❌");
+                    System.out.println("Book already issued ");
                 }
 
             } else {
-                System.out.println("Book not found ❌");
+                System.out.println("Book not found ");
             }
 
         } catch (Exception e) {
@@ -252,10 +252,10 @@ public class LibraryService {
                 updatePs.setInt(1, bookId);
                 updatePs.executeUpdate();
 
-                System.out.println("Book returned successfully 🔥");
+                System.out.println("Book returned successfully ");
 
             } else {
-                System.out.println("No active issue found for this book ❌");
+                System.out.println("No active issue found for this book ");
             }
 
         } catch (Exception e) {
@@ -314,11 +314,11 @@ public class LibraryService {
 
                 case 9:
                     exit = true;
-                    System.out.println("Exiting... 👋");
+                    System.out.println("Exiting...");
                     break;
 
                 default:
-                    System.out.println("Invalid input 😢");
+                    System.out.println("Invalid input ");
             }
         }
     }

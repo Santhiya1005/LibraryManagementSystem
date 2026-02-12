@@ -11,10 +11,10 @@ public class DBConnection {
     public static Connection getConnection() {
         try {
             Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
-            // System.out.println("Connected to PostgreSQL successfully 🔥"); // optional
+            // System.out.println("Connected to PostgreSQL successfully ");
             return conn;
         } catch (SQLException e) {
-            System.out.println("Connection failed ❌");
+            System.out.println("Connection failed ");
             e.printStackTrace();
             return null;
         }
