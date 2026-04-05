@@ -7,15 +7,15 @@ This project allows management of books, students, and book issuing/returning fu
 
 ## Features
 
-- ✅ Add Book  
+- ✅ Add model.Book  
 - ✅ View Books  
-- ✅ Update Book  
-- ✅ Delete Book  
+- ✅ Update model.Book  
+- ✅ Delete model.Book  
 - ✅ Add Student  
 - ✅ View Students  
-- ✅ Issue Book  
-- ✅ Return Book  
-- ✅ Book Availability Tracking  
+- ✅ Issue model.Book  
+- ✅ Return model.Book  
+- ✅ model.Book Availability Tracking  
 
 ---
 
@@ -64,12 +64,12 @@ This project allows management of books, students, and book issuing/returning fu
 
 ## How It Works
 
-### Issue Book Logic
+### Issue model.Book Logic
 - Checks if the book is available
 - Inserts record into `issued_books`
 - Updates book availability to `false`
 
-### Return Book Logic
+### Return model.Book Logic
 - Updates `return_date`
 - Updates book availability to `true`
 
@@ -90,7 +90,7 @@ This project allows management of books, students, and book issuing/returning fu
 
 4. Update DB credentials inside:
    ```
-   DBConnection.java
+   util.DBConnection.java
    ```
 
 5. Run `Main.java`

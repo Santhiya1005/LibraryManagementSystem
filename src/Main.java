@@ -1,8 +1,8 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import controller.LibraryController;
+
 public class Main {
-    public static void main(String[] args){
-        LibraryService service =new LibraryService();
-        service.menu();
+    public static void main(String[] args) {
+        LibraryController controller = new LibraryController();
+        controller.menu();
     }
 }
